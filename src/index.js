@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
+// boostrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const App = lazy(() => import('./App'));
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+        <Suspense fallback={<h1>loading...</h1>}>
       <App />
+        </Suspense>
     </Provider>
   </React.StrictMode>
 );
