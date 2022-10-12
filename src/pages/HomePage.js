@@ -1,5 +1,12 @@
 import React from 'react';
+import HeroSection from '../components/HeroSection'
+import ProjectsSection from '../components/ProjectsSection'
 
 export default function HomePage() {
-    return(<h1>HomePage</h1>);
+    return(
+		<div className='home-page'>
+			<HeroSection />
+			<ProjectsSection />
+		</div>
+	);
 }

@@ -1,5 +1,8 @@
 import React from 'react';
+import { ProjectsList } from '../features/projects';
 
 export default function ProjectsPage() {
-    return(<h1>ProjectsPage</h1>);
+    return(
+		<ProjectsList />
+	);
 }

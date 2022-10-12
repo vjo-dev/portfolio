@@ -2,3 +2,38 @@
   text-align: center;
 }
 
+.section {
+    margin-bottom: 5rem;
+	padding: 0 1.4rem;
+	display: flex;
+	flex-direction: row;
+	min-height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-logo {
+	width: 100%;
+}
+
+.hero-description {
+	text-align: left;
+}
+
+.navlink {
+	margin-right: 1rem;
+}
+
+.contact {
+	margin-left: 2rem;
+}
+
+.contact-title {
+	text-align: left;
+}
+
+.contact-items {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}

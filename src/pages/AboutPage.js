@@ -1,5 +1,12 @@
 import React from 'react';
+import AboutSection from '../components/AboutSection'
+import ResumeSection from '../components/ResumeSection'
 
 export default function AboutPage() {
-    return(<h1>AboutPage</h1>);
+    return(
+		<div className='about-page'>
+			<AboutSection />
+			<ResumeSection />
+		</div>
+	);
 }
