@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import ProjectCard from './ProjectCard';
@@ -26,8 +25,12 @@ const ProjectsListStyle = styled.div`
         outline: none;
         border: none;
     }
+    .search_icon-container{
+        height: 25px;
+    }
     .projects_search .search_icon path {
         color: gray;
+        max-height: 30px;
     }
     .projects_list{
         margin-top: 1.5rem;
@@ -88,7 +91,7 @@ export default function ProjectsList() {
                     onChange={handleChange}
                     placeholder="Project Name"
                 />
-                <Search className="search_icon"/>
+                <div className="search_icon-container"><Search className="search_icon"/></div>
             </div>
 			<div className="projects_list">
                 {content}

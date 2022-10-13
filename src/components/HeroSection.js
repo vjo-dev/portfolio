@@ -1,6 +1,5 @@
 import React from "react";
-import logo from '../assets/images/logo512.png';
-import SectionTitle from './SectionTitle';
+import logo from '../assets/images/logo.png';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

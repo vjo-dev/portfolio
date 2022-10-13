@@ -32,12 +32,13 @@ ul,li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
+img, svg {
+	height: 100%;
+	width: 100%;
 }
 
-img, svg {
-    object-fit: cover;
+a {
+    text-decoration: none;
 }
 
 button {

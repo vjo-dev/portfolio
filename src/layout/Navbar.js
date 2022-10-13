@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
-import logo from '../assets/images/logo512.png'
+import logo from '../assets/images/logo.png'
 import { LinkContainer } from 'react-router-bootstrap'
 
 
@@ -14,14 +14,14 @@ export default function TopBar() {
             <Container>
                 <LinkContainer to="/">
                     <Navbar.Brand>
+						<div style={{ width: "50px"}}>
                         <Image
-                            alt="logo_vorpe_vins_degustations"
+                            alt="logo-vjo_dev"
                             src={logo}
                             height="60"
-                            roundedCircle={true}
                             className="d-inline-block"
                         />{' '}
-                        vjo dev
+                        vjo dev</div>
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
