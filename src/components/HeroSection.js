@@ -15,8 +15,8 @@ export default function HeroSection() {
 					</Col>
 					<Col className="hero-description">
 						<h1 className="hero-title">Hello!</h1>
-						<h2 className="hero-title">I'm Vincent. I am me...</h2>
-						<h3 className="hero-text">I am me... and also a web developper,continuous improvment addict, project manager, woodworker, montain biker...</h3>
+						<h2 className="hero-title">I'm Vincent, a web developper but not only...</h2>
+						<h3 className="hero-text">Take a look to discover my activities.</h3>
 					</Col>
 				</Row>
 			</Container>
