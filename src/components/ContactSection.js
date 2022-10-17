@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Hexagon from '../features/logo/Hexagon';
+import pdf from '../assets/data/cv_vjournot.pdf';
 
 export default function ContactSection() {
 
@@ -18,7 +19,8 @@ export default function ContactSection() {
 			<div className="contact-items">
                 <Contact name="Email" color="blue" link="mailto:journot.vincent@gmail.com"/>
                 <Contact name="LinkedIn" color="green" link="https://www.linkedin.com/in/vincent-journot"/>
-                <Contact name="Resume" color="lightgreen"/>
+                <Contact name="GitHub" color="lightblue" link="https://github.com/vjo-dev"/>
+                <Contact name="Resume" color="lightgreen" link={pdf}/>
 			</div>
 		</ContactItem>
 	);
