@@ -5,9 +5,6 @@ import { store } from './app/store';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
-// boostrap
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 const App = lazy(() => import('./App'));
 const container = document.getElementById('root');
 const root = createRoot(container);

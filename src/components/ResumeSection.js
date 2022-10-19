@@ -1,18 +1,15 @@
 import React from "react";
+import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import { ResumeList } from '../features/resume';
 
-import Container from 'react-bootstrap/Container';
-
 export default function ResumeSection() {
-
-
 	return(
-		<div className="resume-section section">
-			<Container>
-                    <SectionTitle subtitle="Discover my journey" title="Resume" reverse center/>
-                    <ResumeList />
-			</Container>
-		</div>
+		<ResumeSectionStyle>
+            <SectionTitle subtitle="Discover my journey" title="Resume" reverse center/>
+            <ResumeList />
+		</ResumeSectionStyle>
 	);
 }
+
+const ResumeSectionStyle = styled.div``;

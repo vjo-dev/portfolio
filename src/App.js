@@ -10,6 +10,25 @@ import AboutPage from './pages/AboutPage';
 import AlwaysOnTop from './layout/AlwaysOnTop';
 import styled from 'styled-components';
 
+export default function App() {
+    const darkMode = useSelector(state => state.theme.isDarkMode)
+
+    return (
+        <AppStyle className="App" darkMode={darkMode}>
+            <Router>
+                <AlwaysOnTop />
+                <Navbar />
+                <Routes>
+                    <Route exact path="/" element={<HomePage />} />
+                    <Route exact path="/projects" element={<ProjectsPage />} />
+                    <Route exact path="/about" element={<AboutPage />} />
+                </Routes>
+                <Footer />
+            </Router>
+        </AppStyle>
+    );
+}
+
 const AppStyle = styled.div`
     --bg-color: ${props => props.darkMode? "black" : "white"};
     --text-color: ${props => props.darkMode? "white" : "black"};
@@ -18,21 +37,3 @@ const AppStyle = styled.div`
     color: var(--text-color);
 `;
 
-export default function App() {
-    const darkMode = useSelector(state => state.theme.isDarkMode)
-
-return (
-    <AppStyle className="App" darkMode={darkMode}>
-        <Router>
-            <AlwaysOnTop />
-            <Navbar />
-            <Routes>
-                <Route exact path="/" element={<HomePage />} />
-                <Route exact path="/projects" element={<ProjectsPage />} />
-                <Route exact path="/about" element={<AboutPage />} />
-            </Routes>
-            <Footer />
-        </Router>
-    </AppStyle>
-);
-}

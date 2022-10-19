@@ -2,6 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Hexagon from './Hexagon';
 
+export default function LogoHexagon() {
+	return(
+		<LogoHexagonStyle>
+		<div className='container-hexagons'>
+			<div className='svg-container hex-1'><Hexagon color="green" opacity="0.4"/></div>
+			<div className='svg-container hex-2'><Hexagon color="blue"/></div>
+			<div className='svg-container hex-3'><Hexagon color="blue" opacity="0.6"/></div>
+		</div>
+		</LogoHexagonStyle>
+	);
+}
+
 const LogoHexagonStyle = styled.div`
 	display: flex;
 	justify-content: center;
@@ -28,16 +40,4 @@ const LogoHexagonStyle = styled.div`
 		top: 35px;
 		left: 40px;
 	}
-`
-
-export default function LogoHexagon() {
-	return(
-		<LogoHexagonStyle>
-		<div className='container-hexagons'>
-			<div className='svg-container hex-1'><Hexagon color="green" opacity="0.4"/></div>
-			<div className='svg-container hex-2'><Hexagon color="blue"/></div>
-			<div className='svg-container hex-3'><Hexagon color="blue" opacity="0.6"/></div>
-		</div>
-		</LogoHexagonStyle>
-	);
-}
+`;

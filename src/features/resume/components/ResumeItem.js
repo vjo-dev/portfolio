@@ -1,6 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export default function ResumeItem({
+    name='name',
+    items=['item 1', 'item 2', 'item 3'],
+    appendix=''
+}) {
+    return(
+        <ResumeItemStyle>
+            <h1 className="name">{name}</h1>
+            <div className="items">
+                {items.map((item, index) => (
+                    <div className="item" key={index}>
+                        {item}
+                    </div>
+                ))}
+                <div className="appendix">{appendix}</div>
+            </div>
+        </ResumeItemStyle>
+    );
+}
+
 const ResumeItemStyle = styled.div`
     display: flex;
     align-items: center;
@@ -36,24 +56,4 @@ const ResumeItemStyle = styled.div`
             gap: 1rem;
         }
     }
-`
-
-export default function ResumeItem({
-    name='name',
-    items=['item 1', 'item 2', 'item 3'],
-    appendix=''
-}) {
-    return(
-        <ResumeItemStyle>
-            <h1 className="name">{name}</h1>
-            <div className="items">
-                {items.map((item, index) => (
-                    <div className="item" key={index}>
-                        {item}
-                    </div>
-                ))}
-                <div className="appendix">{appendix}</div>
-            </div>
-        </ResumeItemStyle>
-    );
-}
+`;
