@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import ProjectCard from './ProjectCard';
 import CategoryFilter from './CategoryFilter';
@@ -8,12 +8,11 @@ import { Search } from 'react-bootstrap-icons';
 export default function ProjectsList() {
 	const projects = useSelector(state => state.projects.projects)
 	const activeCategory = useSelector(state => state.projects.category)
-    const [content, setContent] = useState(projects)
     const [searchText, setSearchText] = useState('')
 
-    useEffect(() => {
-        setContent(() => projects.filter(project => project.name.toLowerCase().match(searchText.toLowerCase())))
-    }, [searchText, projects, activeCategory])
+	const filteredProjects = useMemo(() => {
+		return projects.filter(project => project.name.toLowerCase().includes(searchText.toLowerCase()))
+	}, [searchText, projects])
 
 	return (
         <ProjectsListStyle>
@@ -32,7 +31,7 @@ export default function ProjectsList() {
 				</div>
 			</div>
             <div className="projects-list">
-                {content.length ? content.map(project => (
+                {filteredProjects.length ? filteredProjects.map(project => (
 					<ProjectCard  key={project.id} name={project.name} desc={project.desc} img={project.img} />
                 )) : <h3>No project found</h3>}
             </div>
