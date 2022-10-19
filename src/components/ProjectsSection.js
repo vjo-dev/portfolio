@@ -16,7 +16,7 @@ export default function ProjectsSection() {
 
 	return(
         <ProjectSectionStyle>
-            <div className="project_section-title">
+            <div className="project-section-title">
                 <SectionTitle subtitle="Some of my works" title="projects" reverse center/>
                 <Button link="/projects" text="See more" outline/>
             </div>
@@ -46,8 +46,19 @@ export default function ProjectsSection() {
 }
 
 const ProjectSectionStyle = styled.div`
+    background: var(--bg-color);
     display: flex;
     flex-direction: column;
+    padding: 8rem 0;
+
+    .project-section-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .project_section-swiper {
         padding: 1rem;
         .swiper {
@@ -57,17 +68,19 @@ const ProjectSectionStyle = styled.div`
         .swiper-button-prev,
         .swiper-button-next {
             position: absolute;
+            color: var(--text-color);
+            background-color: var(--blue-1);
             height: 50px;
             width: 50px;
             z-index: 10;
-            right: 60px;
+            right: 100px;
             left: auto;
             top: 0;
             transform: translateY(50%);
             border-radius: 8px;
         }
         .swiper-button-next {
-            right: 0;
+            right: 40px;
         }
         .swiper-button-prev::after,
         .swiper-button-next::after {

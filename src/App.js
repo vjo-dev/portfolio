@@ -44,6 +44,10 @@ const AppStyle = styled.div`
 
     background: var(--bg-color);
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h3 {
         font-size: 2rem;

@@ -1,20 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SectionTitleStyle = styled.div`
-    margin-top: 4rem;
-    text-align: ${props => props.center ? "center" : "left"};
-    display: flex;
-    flex-direction: ${props => props.reverse ? "column-reverse" : "column"};
-    h3{
-    }
-    h1{
-    text-transform: uppercase;
-    }
-    @media only screen and (max-width: 768px){
-    }
-`
-
 export default function SectionTitle({
     title="main title",
     subtitle,
@@ -28,3 +14,12 @@ export default function SectionTitle({
         </SectionTitleStyle>
     );
 }
+
+const SectionTitleStyle = styled.div`
+    display: flex;
+    flex-direction: ${props => props.reverse ? "column-reverse" : "column"};
+    text-align: ${props => props.center ? "center" : "left"};
+    h1{
+        text-transform: uppercase;
+    }
+`;

@@ -47,6 +47,7 @@ export default function Navbar() {
 }
 
 const NavbarStyle = styled.div`
+    width: 100%;
     .navbar {
         display: flex;
         justify-content: space-between;
