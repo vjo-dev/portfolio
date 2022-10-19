@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { useSelector } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './layout/Navbar';
@@ -32,6 +31,12 @@ export default function App() {
 const AppStyle = styled.div`
     --bg-color: ${props => props.darkMode? "black" : "white"};
     --text-color: ${props => props.darkMode? "white" : "black"};
+    --text-color-light: ${props => props.darkMode? "black" : "white"};
+    --blue: ${props => props.darkMode? "lightblue" : "blue"};
+    --light-blue: ${props => props.darkMode? "blue" : "lightblue"};
+    --green: ${props => props.darkMode? "green" : "green"};
+    --light-green: ${props => props.darkMode? "lightgreen" : "lightgreen"};
+    --border-radius: 8px;
 
     background: var(--bg-color);
     color: var(--text-color);

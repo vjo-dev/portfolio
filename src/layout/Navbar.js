@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/logo.png';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
 
 const menu = {
     "logo": logo,
@@ -20,11 +21,14 @@ export default function Navbar() {
         <NavbarStyle>
             <div className="navbar">
                 {/* LOGO SECTION */}
-                <div className="logo-section"><img src={menu.logo} alt="brand-logo"/></div>
+                <div className="logo-section">
+                    <img src={menu.logo} alt="brand-logo"/>
+                    <span>vjo dev</span>
+                </div>
 
                 {/* DESKTOP MENU, visible on large screen*/}
                 <div className="menu-items">
-                    {menu.items.map((item, index) => (<a key={index} className="menu-item" href={item.link}>{item.name}</a>))}
+                    {menu.items.map((item, index) => (<NavLink end key={index} className="menu-item" to={item.link}>{item.name}</NavLink>))}
                 </div>
 
                 {/* MOBILE MENU OPEN BUTTON, visible on small screen when mobile menu is not visible*/}
@@ -43,41 +47,55 @@ export default function Navbar() {
 }
 
 const NavbarStyle = styled.div`
-    display: space-between;
-    .mobile_menu {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.4rem;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .mobile_menu-buttons {
         display: none;
     }
-    .navbar {
-        height: 100px;
-        .mobile_menu-buttons {
-            display: none;
-        }
 
-        .logo-section {
+    .logo-section {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-left: 1rem;
+        height: 100%;
+        img {
             height: 100%;
-            padding: 0.5rem;
+            width: auto;
         }
-
-        .menu-items {
-            display: flex;
-            margin-right: 1rem;
-            gap: 1rem;
+        span {
+            font-size: 2rem;
         }
     }
 
-    @media only screen and (max-width: 768px) {
-        .mobile_menu {
-            display: flex;
-            flex-direction: column;
-        }
-        .navbar {
-            .menu-items {
-                display: none;
-            }
-            .mobile_menu-buttons {
-                display: block;
-            }
-        }
+    .menu-items {
+        display: flex;
+        margin-right: 1rem;
+        gap: 1rem;
+    }
 
+    .menu-item {
+        all: unset;
+        font-size: 1.3rem;
+        cursor: pointer;
+        padding: 0.4rem 2rem;
+        border-radius: var(--border-radius);
+        
+        :hover {
+            background: var(--blue);
+            color: var(--text-color-light);
+        }
+    }
+
+    .active {
+        background: var(--light-blue);
+        color: var(--text-color);
     }
 `;
