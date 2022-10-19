@@ -17,22 +17,15 @@ export default function ThemeButton() {
             <div className="icon-container">
                 {darkMode? <Moon /> : <BrightnessHigh />}
             </div>
-            <h5>Color theme</h5>
+            <div className="label-container"><h5>Color theme</h5></div>
         </ThemeButtonStyle>
     );
 }
 
 const ThemeButtonStyle = styled.button`
-    outline: none;
-    border: none;
-    background: none;
+    all: unset;
     display: flex;
     flex-direction: row;
     align-items: start;
-    .icon-container {
-        width: 20px;
-        margin-right: 0.5rem;
-        margin-left: 1rem;
-    }
 `;
 

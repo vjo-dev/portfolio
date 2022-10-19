@@ -1,12 +1,35 @@
 import React from 'react';
+import styled from 'styled-components';
 import ContactSection from '../components/ContactSection';
 import SettingsSection from '../components/SettingsSection';
 
 export default function Footer() {
     return(
-		<div className="footer">
+		<FooterStyle>
 			<ContactSection />
             <SettingsSection />
-		</div>
+		</FooterStyle>
 	);
 }
+
+const FooterStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+
+    .title {
+        color: var(--text-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .icon-container {
+        width: 30px;
+        height: 30px;
+        margin-right: 0.4rem;
+        svg {
+            height: 100%;
+            width: 100%;
+        }
+    }
+`;
