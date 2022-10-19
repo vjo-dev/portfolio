@@ -85,17 +85,16 @@ const NavbarStyle = styled.div`
         all: unset;
         font-size: 1.3rem;
         cursor: pointer;
-        padding: 0.4rem 2rem;
+        padding: 0.4rem 1rem;
         border-radius: var(--border-radius);
         
         :hover {
-            background: var(--blue);
-            color: var(--text-color-light);
+            color: var(--blue-2);
         }
     }
 
     .active {
-        background: var(--light-blue);
-        color: var(--text-color);
+        color: var(--blue-1);
+        font-weight: bold;
     }
 `;
