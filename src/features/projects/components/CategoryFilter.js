@@ -34,10 +34,14 @@ const CategoryFilterStyle = styled.div`
     gap: 1rem;
     button {
         all: unset;
+		padding: 0.6rem 1rem;
+		border-radius: var(--border-radius);
     }
     .category {
-        background-color: blue;
+        background-color: var(--blue-2);
+		color: black;
     }
     .active {
-        background-color: red;
+        background-color: var(--blue-1);
+		color: white;
 `;

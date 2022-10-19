@@ -68,7 +68,7 @@ const ProjectSectionStyle = styled.div`
         .swiper-button-prev,
         .swiper-button-next {
             position: absolute;
-            color: var(--text-color);
+            color: white;
             background-color: var(--blue-1);
             height: 50px;
             width: 50px;

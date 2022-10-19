@@ -9,7 +9,7 @@ export default function HeroSection() {
                 <img className="hero-logo" src={logo} alt="hero-logo" />
             </div>
             <div className="hero-section-pitch">
-                <h1>Hello!</h1>
+                <h1>Welcome!</h1>
                 <h2>I'm Vincent, a<br/>web developper<br/>but not only...</h2>
                 <h3>Take a look to discover my activities.</h3>
             </div>
@@ -37,13 +37,7 @@ const HeroSectionStyle = styled.div`
         margin-left: 5rem;
         width: 50%;
         h1 {
-            font-size: 5rem;
-            font-weight: 600;
             color: var(--green-1);
-        }
-        h2 {
-            font-size: 3rem;
-            font-weight: 500;
         }
         h3 {
             margin-top: 1rem;

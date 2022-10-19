@@ -10,7 +10,7 @@ export default function SectionTitle({
     return(
         <SectionTitleStyle reverse={reverse} center={center}>
             <h1>{title}</h1>
-            <h3>{subtitle? subtitle : null}</h3>
+            <h2>{subtitle? subtitle : null}</h2>
         </SectionTitleStyle>
     );
 }

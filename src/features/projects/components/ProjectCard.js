@@ -21,12 +21,13 @@ export default function ProjectCard({
 }
 
 const Styled = styled.div`
-    max-width: 400px;
+	padding: 1rem;
     .card_img{
         width: 100%;
         height: 350px;
         overflow: hidden;
-        border-radius: 12px;
+        border-radius: var(--border-radius);
+		border: 2px solid white;
         display: inline-block;
         img{
             width: 100%;
@@ -34,6 +35,10 @@ const Styled = styled.div`
         }
     }
     .card_content{
+		background: var(--blue-1);
+		color: white;
+		border-radius: var(--border-radius);
+		margin-top: 1rem;
         text-align: left;
         padding: 1rem;
         .card_title{

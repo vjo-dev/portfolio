@@ -36,8 +36,8 @@ const AppStyle = styled.div`
     --bg-color: ${props => props.darkMode? "black" : "white"};
     --text-color: ${props => props.darkMode? "white" : "black"};
     --text-color-light: ${props => props.darkMode? "black" : "white"};
-    --blue: ${props => props.darkMode? "lightblue" : "blue"};
-    --light-blue: ${props => props.darkMode? "blue" : "lightblue"};
+    --blue: ${props => props.darkMode? "var(--blue-2)" : "var(--blue-1)"};
+    --light-blue: ${props => props.darkMode? "var(--blue-1)" : "var(--blue-2)"};
     --green: ${props => props.darkMode? "green" : "green"};
     --light-green: ${props => props.darkMode? "lightgreen" : "lightgreen"};
     --border-radius: 8px;
@@ -48,6 +48,16 @@ const AppStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+	h1 {
+		font-size: 5rem;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 3rem;
+		font-weight: 500;
+	}
 
     h3 {
         font-size: 2rem;
