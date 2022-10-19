@@ -29,6 +29,10 @@ export default function App() {
 }
 
 const AppStyle = styled.div`
+    --blue-1: hsl(205, 100%, 46%);
+    --blue-2: hsl(205, 100%, 80%);
+    --green-1: hsl(105, 58%, 44%);
+    --green-2: hsl(105, 58%, 84%);
     --bg-color: ${props => props.darkMode? "black" : "white"};
     --text-color: ${props => props.darkMode? "white" : "black"};
     --text-color-light: ${props => props.darkMode? "black" : "white"};
@@ -40,5 +44,13 @@ const AppStyle = styled.div`
 
     background: var(--bg-color);
     color: var(--text-color);
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
 `;
 
