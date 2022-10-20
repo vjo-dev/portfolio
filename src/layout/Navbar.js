@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
+import { List, X } from 'react-bootstrap-icons';
 
 const menu = {
     "logo": logo,
@@ -32,15 +33,15 @@ export default function Navbar() {
                 </div>
 
                 {/* MOBILE MENU OPEN BUTTON, visible on small screen when mobile menu is not visible*/}
-                <div className="mobile_menu-buttons">
-                    {!isExpanded && <button onClick={handleExpand}>Open</button>}
-                    {isExpanded && <button onClick={handleExpand}>Close</button>}
+                <div className="mobile-menu-buttons">
+                    {!isExpanded && <List onClick={handleExpand} />}
+                    {isExpanded && <X onClick={handleExpand} />}
                 </div>
             </div>
 
             {/* MOBILE MENU and CLOSE BUTTON, visible on small screen when mobile menu is visible*/}
-            {isExpanded && <div className="mobile_menu">
-                        {menu.items.map((item, index) => (<a key={index} className="menu-item" href={item.link}>{item.name}</a>))}
+            {isExpanded && <div className="mobile-menu-items">
+                        {menu.items.map((item, index) => (<NavLink end key={index} className="mobile-menu-item" to={item.link}>{item.name}</NavLink>))}
                     </div>}
         </NavbarStyle>
     );
@@ -57,7 +58,11 @@ const NavbarStyle = styled.div`
         height: 10vh;
     }
 
-    .mobile_menu-buttons {
+    .mobile-menu-buttons {
+        display: none;
+    }
+
+    .mobile-menu-items {
         display: none;
     }
 
@@ -88,7 +93,7 @@ const NavbarStyle = styled.div`
         cursor: pointer;
         padding: 0.4rem 1rem;
         border-radius: var(--border-radius);
-        
+
         :hover {
             color: var(--blue-2);
         }
@@ -98,4 +103,40 @@ const NavbarStyle = styled.div`
         color: var(--blue-1);
         font-weight: bold;
     }
+
+@media only screen and (max-width: 800px){
+    .menu-items {
+        display: none;
+    }
+
+    .mobile-menu-buttons {
+        display: flex;
+        width: 35px;
+        svg {
+            width: 100%;
+            height: auto;
+            }
+    }
+
+    .mobile-menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-menu-item {
+        all: unset;
+        font-size: 1.3rem;
+        cursor: pointer;
+        padding: 0.4rem 1rem;
+        margin-right: 1rem;
+    }
+
+    .active {
+        color: var(--blue-1);
+        font-weight: bold;
+    }
+}
 `;
