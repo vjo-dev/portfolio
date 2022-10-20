@@ -22,14 +22,14 @@ export default function Navbar() {
         <NavbarStyle>
             <div className="navbar">
                 {/* LOGO SECTION */}
-                <div className="logo-section">
+                <NavLink end className="logo-section" to="/" onClick={handleExpand}>
                     <img src={menu.logo} alt="brand-logo"/>
                     <span>vjo dev</span>
-                </div>
+                </NavLink>
 
                 {/* DESKTOP MENU, visible on large screen*/}
                 <div className="menu-items">
-                    {menu.items.map((item, index) => (<NavLink end key={index} className="menu-item" to={item.link}>{item.name}</NavLink>))}
+                    {menu.items.map((item, index) => (<NavLink key={index} className="menu-item" to={item.link} >{item.name}</NavLink>))}
                 </div>
 
                 {/* MOBILE MENU OPEN BUTTON, visible on small screen when mobile menu is not visible*/}
@@ -41,7 +41,7 @@ export default function Navbar() {
 
             {/* MOBILE MENU and CLOSE BUTTON, visible on small screen when mobile menu is visible*/}
             {isExpanded && <div className="mobile-menu-items">
-                        {menu.items.map((item, index) => (<NavLink end key={index} className="mobile-menu-item" to={item.link}>{item.name}</NavLink>))}
+                        {menu.items.map((item, index) => (<NavLink end key={index} className="mobile-menu-item" to={item.link} onClick={handleExpand}>{item.name}</NavLink>))}
                     </div>}
         </NavbarStyle>
     );
@@ -67,6 +67,7 @@ const NavbarStyle = styled.div`
     }
 
     .logo-section {
+        all: unset;
         display: flex;
         gap: 1rem;
         align-items: center;
@@ -77,7 +78,9 @@ const NavbarStyle = styled.div`
             width: auto;
         }
         span {
+            color: var(--text-color);
             font-size: 2rem;
+            font-weight: 300;
         }
     }
 
@@ -107,6 +110,10 @@ const NavbarStyle = styled.div`
 @media only screen and (max-width: 800px){
     .menu-items {
         display: none;
+    }
+
+    .logo-section {
+        margin-left: 0.2rem;
     }
 
     .mobile-menu-buttons {
