@@ -9,8 +9,8 @@ export default function SectionTitle({
 }) {
     return(
         <SectionTitleStyle reverse={reverse} center={center}>
-            <h1>{title}</h1>
-            <h2>{subtitle? subtitle : null}</h2>
+            <h2>{title}</h2>
+            <h3>{subtitle? subtitle : null}</h3>
         </SectionTitleStyle>
     );
 }
@@ -19,7 +19,8 @@ const SectionTitleStyle = styled.div`
     display: flex;
     flex-direction: ${props => props.reverse ? "column-reverse" : "column"};
     text-align: ${props => props.center ? "center" : "left"};
-    h1{
+    h2{
         text-transform: uppercase;
+        margin-bottom: 1.5rem;
     }
 `;

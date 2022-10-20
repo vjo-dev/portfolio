@@ -61,6 +61,11 @@ const AppStyle = styled.div`
 
     h3 {
         font-size: 2rem;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 1.6rem;
     }
 
     h5 {

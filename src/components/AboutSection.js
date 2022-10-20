@@ -31,5 +31,5 @@ export default function AboutSection() {
 }
 
 const AboutSectionStyle = styled.div`
-    display: flex;
+    background: var(--bg-color);
 `;

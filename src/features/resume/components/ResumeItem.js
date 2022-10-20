@@ -8,7 +8,7 @@ export default function ResumeItem({
 }) {
     return(
         <ResumeItemStyle>
-            <h1 className="name">{name}</h1>
+            <h3>{name}</h3>
             <div className="items">
                 {items.map((item, index) => (
                     <div className="item" key={index}>
@@ -27,26 +27,30 @@ const ResumeItemStyle = styled.div`
     justify-content: flex-start;
     position: relative;
     text-align: left;
-    .name{
-        padding: 0.5rem;
-        margin-top: 1rem;
-        font-size: 1.7rem;
-    }
+    margin-bottom: 1rem;
+
     .items{
         display: flex;
         flex-flow: wrap;
-        gap: 1.5rem;
+        gap: 1rem;
         position: absolute;
         left: 15rem;
     }
+
     .item{
-        background-color: gray;
-        padding: 0.5rem;
-        border-radius: 8px;
+        background-color: var(--green-1);
+        color: white;
+        font-weight: bold;
+        border-radius: var(--border-radius);
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
     }
+
     .appendix{
-        padding: 0.5rem;
+        padding: 0.4rem;
+        font-size: 1.5rem;
     }
+
     @media only screen and (max-width: 768px){
         flex-direction: column;
         align-items: flex-start;

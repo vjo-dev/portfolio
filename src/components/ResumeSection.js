@@ -6,10 +6,13 @@ import { ResumeList } from '../features/resume';
 export default function ResumeSection() {
 	return(
 		<ResumeSectionStyle>
-            <SectionTitle subtitle="Discover my journey" title="Resume" reverse center/>
+            <SectionTitle subtitle="My professional background" title="Resume" reverse center/>
             <ResumeList />
 		</ResumeSectionStyle>
 	);
 }
 
-const ResumeSectionStyle = styled.div``;
+const ResumeSectionStyle = styled.div`
+    background: var(--bg-color);
+    padding: 4rem 0;
+`;

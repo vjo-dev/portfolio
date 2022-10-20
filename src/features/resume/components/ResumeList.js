@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import ResumeItem from './ResumeItem';
 import SectionTitle from '../../../components/SectionTitle';
 import skills from '../../../assets/data/skills.js'
@@ -8,31 +9,40 @@ import certifications from '../../../assets/data/certifications.js'
 
 export default function ResumeList() {
     return(
-        <div className="resume_list">
-            <div className="skills_items">
-                <SectionTitle title="Skills" />
+        <ResumeListStyle>
+            <div className="resume-group">
+                <h2>Skills</h2>
                 {skills.map(skill => (
                     <ResumeItem key={skill.id} name={skill.name} items={skill.items}/>
                 ))}
             </div>
-            <div className="certifications_items">
-                <SectionTitle title="Certifications" />
+            <div className="resume-group">
+                <h2>Certifications</h2>
                 {certifications.map(certification => (
                     <ResumeItem key={certification.id} name={certification.name} items={certification.items}/>
                 ))}
             </div>
-            <div className="works_items">
-                <SectionTitle title="Work Experiences" />
+            <div className="resume-group">
+                <h2>Work Experiences</h2>
                 {works.map(work => (
                     <ResumeItem key={work.id} name={work.name} items={work.items} appendix={work.appendix}/>
                 ))}
             </div>
-            <div className="educations_items">
-                <SectionTitle title="Education" />
+            <div className="resume-group">
+                <h2>Education</h2>
                 {educations.map(education => (
                     <ResumeItem key={education.id} name={education.name} items={education.items}/>
                 ))}
             </div>
-        </div>
+        </ResumeListStyle>
     );
 }
+
+const ResumeListStyle = styled.div`
+    .resume-group {
+        margin-bottom: 3rem;
+    }
+    h2 {
+        margin-bottom: 1rem;
+    }
+`;

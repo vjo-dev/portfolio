@@ -10,7 +10,7 @@ export default function Button({
     return (
         <ButtonStyle outline={outline}>
             <Link className="button" to={link}>
-                <h3>{text}</h3>
+                <h4>{text}</h4>
             </Link>
         </ButtonStyle>
     );
