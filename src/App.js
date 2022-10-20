@@ -71,5 +71,29 @@ const AppStyle = styled.div`
     h5 {
         font-size: 1.2rem;
     }
+
+@media only screen and (max-width: 800px){
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+}
 `;
 

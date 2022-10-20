@@ -19,4 +19,11 @@ const HomePageStyle = styled.div`
     padding-bottom: 1px;
     background: var(--text-color);
     width: 90vw;
+
+    @media only screen and (max-width: 800px){
+        background: var(--bg-color);
+        padding: 0;
+        gap: 0;
+        width: 100vw;
+    }
 `;

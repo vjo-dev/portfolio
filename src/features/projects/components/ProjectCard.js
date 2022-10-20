@@ -21,7 +21,10 @@ export default function ProjectCard({
 }
 
 const Styled = styled.div`
+    display: flex;
+    flex-direction: column;
 	padding: 1rem;
+    max-width: 400px;
     .card_img{
         width: 100%;
         height: 350px;
@@ -32,6 +35,7 @@ const Styled = styled.div`
         img{
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
     .card_content{

@@ -65,6 +65,10 @@ const ProjectSectionStyle = styled.div`
             padding-top: 4rem;
             max-width: 100%;
         }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
         .swiper-button-prev,
         .swiper-button-next {
             position: absolute;
@@ -87,4 +91,37 @@ const ProjectSectionStyle = styled.div`
             font-size: 2rem;
         }
     }
+
+@media only screen and (max-width: 800px){
+    padding: 4rem 0;
+
+    .project_section-swiper {
+        padding: 0.5rem;
+        .swiper {
+            padding-top: 3rem;
+            max-width: 100%;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            color: white;
+            background-color: var(--blue-1);
+            height: 50px;
+            width: 50px;
+            z-index: 10;
+            right: 100px;
+            left: auto;
+            top: 0;
+            transform: translateY(50%);
+            border-radius: 8px;
+        }
+        .swiper-button-next {
+            right: 40px;
+        }
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 1.5rem;
+        }
+    }
+}
 `;

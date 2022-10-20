@@ -45,4 +45,26 @@ const HeroSectionStyle = styled.div`
             font-weight: 400;
         }
     }
+
+@media only screen and (max-width: 800px){
+    flex-direction: column-reverse;
+    padding: 2rem 0;
+
+   .hero-section-logo {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .hero-section-pitch {
+        text-align: center;
+        margin: 0;
+        padding: 2rem;
+        width: 100%;
+        h3 {
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+}
 `;

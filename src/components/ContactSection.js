@@ -30,11 +30,11 @@ const ContactItem = styled.div`
     display: flex;
     flex-direction: column;
     
-    .contact-items {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
+        .contact-items {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
 
     .contact-item {
         all: unset;
@@ -44,5 +44,14 @@ const ContactItem = styled.div`
         cursor: pointer;
         padding: 0.4rem;
     }
+
+@media only screen and (max-width: 800px){
+    .contact-items {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+    }
+}
 
 `;
