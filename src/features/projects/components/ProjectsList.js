@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import ProjectCard from './ProjectCard';
 import CategoryFilter from './CategoryFilter';
@@ -7,7 +7,6 @@ import { Search } from 'react-bootstrap-icons';
 
 export default function ProjectsList() {
 	const projects = useSelector(state => state.projects.projects)
-	const activeCategory = useSelector(state => state.projects.category)
     const [searchText, setSearchText] = useState('')
 
 	const filteredProjects = useMemo(() => {
@@ -42,7 +41,7 @@ export default function ProjectsList() {
 const ProjectsListStyle = styled.div`
 	width: 100%;
 	min-height: 80vh;
-	background: var(--bg-color); 
+	background: var(--bg-color);
 	display: flex;
 	flex-direction: column;
 	padding: 4rem 0;
@@ -52,7 +51,7 @@ const ProjectsListStyle = styled.div`
 		align-items: center;
 		gap: 2rem;
 	}
-	
+
 	.projects-search {
 		display: flex;
 		align-items: center;

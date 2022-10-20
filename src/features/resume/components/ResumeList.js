@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import ResumeItem from './ResumeItem';
-import SectionTitle from '../../../components/SectionTitle';
 import skills from '../../../assets/data/skills.js'
 import works from '../../../assets/data/works.js'
 import educations from '../../../assets/data/educations.js'
@@ -42,6 +41,7 @@ const ResumeListStyle = styled.div`
     .resume-group {
         margin-bottom: 3rem;
     }
+
     h2 {
         margin-bottom: 1rem;
     }
