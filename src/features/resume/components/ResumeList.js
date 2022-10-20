@@ -39,6 +39,8 @@ export default function ResumeList() {
 
 const ResumeListStyle = styled.div`
     .resume-group {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 3rem;
     }
 

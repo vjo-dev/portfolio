@@ -15,4 +15,8 @@ export default function ResumeSection() {
 const ResumeSectionStyle = styled.div`
     background: var(--bg-color);
     padding: 4rem 0;
+
+@media only screen and (max-width: 800px){
+    padding: 2rem 1rem;
+}
 `;
