@@ -31,11 +31,13 @@ export default function CategoryFilter() {
 const CategoryFilterStyle = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     button {
         all: unset;
-		padding: 0.6rem 1rem;
+		padding: 0.4rem 1rem;
 		border-radius: var(--border-radius);
+        font-size: 1.2rem;
     }
     .category {
         background-color: var(--blue-2);

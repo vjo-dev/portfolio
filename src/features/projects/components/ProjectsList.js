@@ -73,4 +73,31 @@ const ProjectsListStyle = styled.div`
         grid-template-columns: repeat(auto-fit, minmax(0, calc(100%/3)));
         justify-items: center;
     }
+
+@media only screen and (max-width: 1200px){
+    .projects-list{
+        grid-template-columns: repeat(auto-fit, minmax(0, calc(100%/2)));
+    }
+}
+@media only screen and (max-width: 800px){
+    padding: 2rem 0;
+
+	.projects-filters {
+        flex-direction: column;
+        padding: 0 1rem;
+		gap: 1rem;
+	}
+
+    .projects-search {
+        width: 100%;
+        max-width: 400px;
+        input {
+            width: 95%;
+        }
+    }
+
+    .projects-list{
+        grid-template-columns: repeat(auto-fit, minmax(0, calc(100%/1)));
+    }
+}
 `;
