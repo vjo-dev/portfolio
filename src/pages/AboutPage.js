@@ -6,7 +6,7 @@ import ResumeSection from '../components/ResumeSection'
 export default function AboutPage() {
     return(
 		<AboutPageStyle>
-        {/*<AboutSection />*/}
+      <AboutSection />
 			<ResumeSection />
 		</AboutPageStyle>
 	);
