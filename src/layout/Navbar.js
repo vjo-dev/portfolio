@@ -29,7 +29,7 @@ export default function Navbar() {
 
                 {/* DESKTOP MENU, visible on large screen*/}
                 <div className="menu-items">
-                    {menu.items.map((item, index) => (<NavLink key={index} className="menu-item" to={item.link} >{item.name}</NavLink>))}
+                    {menu.items.map((item, index) => (<NavLink end key={index} className="menu-item" to={item.link} >{item.name}</NavLink>))}
                 </div>
 
                 {/* MOBILE MENU OPEN BUTTON, visible on small screen when mobile menu is not visible*/}
@@ -69,6 +69,7 @@ const NavbarStyle = styled.div`
     .logo-section {
         all: unset;
         display: flex;
+        cursor: pointer;
         gap: 1rem;
         align-items: center;
         margin-left: 1rem;
