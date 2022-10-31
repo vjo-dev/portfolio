@@ -40,8 +40,7 @@ const ContactItem = styled.div`
     .contact-item {
         all: unset;
         display: flex;
-        justify-content: center;
-        align-items: start;
+        align-items: center;
         cursor: pointer;
         padding: 0.4rem;
     }

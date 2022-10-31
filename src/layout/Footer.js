@@ -7,7 +7,7 @@ export default function Footer() {
     return(
 		<FooterStyle>
 			<ContactSection />
-            <SettingsSection />
+      <SettingsSection />
 		</FooterStyle>
 	);
 }
