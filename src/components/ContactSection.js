@@ -11,16 +11,17 @@ export default function ContactSection() {
             <div className="label-container"><h5>{name}</h5></div>
         </a>
     }
+
 	return(
 		<ContactItem>
 			<div className='title'>
 				<h3>Contact</h3>
 			</div>
 			<div className="contact-items">
-                <Contact name="Email" color="blue" link="mailto:journot.vincent@gmail.com"/>
-                <Contact name="LinkedIn" color="green" link="https://www.linkedin.com/in/vincent-journot"/>
-                <Contact name="GitHub" color="lightblue" link="https://github.com/vjo-dev"/>
-                <Contact name="Resume" color="lightgreen" link={pdf}/>
+                <Contact name="Email" color="var(--blue-1)" link="mailto:journot.vincent@gmail.com"/>
+                <Contact name="LinkedIn" color="var(--green-1)" link="https://www.linkedin.com/in/vincent-journot"/>
+                <Contact name="GitHub" color="var(--blue-2)" link="https://github.com/vjo-dev"/>
+                <Contact name="Resume" color="var(--green-2)" link={pdf}/>
 			</div>
 		</ContactItem>
 	);
