@@ -90,6 +90,7 @@ const ProjectsListStyle = styled.div`
 
     .projects-search {
         width: 100%;
+        margin-bottom: 0.5rem;
         max-width: 400px;
         input {
             width: 95%;

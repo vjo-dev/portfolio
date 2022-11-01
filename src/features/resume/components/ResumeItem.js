@@ -34,6 +34,7 @@ const ResumeItemStyle = styled.div`
         flex-flow: wrap;
         position: absolute;
         left: 15rem;
+        gap: 0.4rem;
     }
 
     .item{
@@ -42,7 +43,6 @@ const ResumeItemStyle = styled.div`
         font-weight: bold;
         border-radius: var(--border-radius);
         font-size: 1.2rem;
-        margin: 0 0.2rem;
         padding: 0.5rem 1rem;
     }
 
@@ -57,10 +57,11 @@ const ResumeItemStyle = styled.div`
       gap: 1rem;
       .items {
         position: initial;
-        gap: 1rem;
+        gap: 0;
         margin-bottom: 1rem;
       }
       .item{
+        margin: 0.4rem;
         font-size: 1rem;
       }
       .appendix {
