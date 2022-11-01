@@ -75,19 +75,19 @@ const AppStyle = styled.div`
 @media only screen and (max-width: 800px){
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 
     h4 {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     h5 {

@@ -48,16 +48,23 @@ const ResumeItemStyle = styled.div`
 
     .appendix{
         padding: 0.4rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
-    @media only screen and (max-width: 768px){
-        flex-direction: column;
-        align-items: flex-start;
+    @media only screen and (max-width: 800px){
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      .items {
+        position: initial;
         gap: 1rem;
-        .items {
-            position: initial;
-            gap: 1rem;
-        }
+        margin-bottom: 1rem;
+      }
+      .item{
+        font-size: 1rem;
+      }
+      .appendix {
+        padding: 0.2rem;
+      }
     }
 `;

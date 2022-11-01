@@ -115,6 +115,9 @@ const NavbarStyle = styled.div`
 
     .logo-section {
         margin-left: 0.2rem;
+        span {
+          font-size: 1.5rem;
+        }
     }
 
     .mobile-menu-buttons {
