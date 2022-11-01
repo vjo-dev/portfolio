@@ -29,21 +29,26 @@ export default function CategoryFilter() {
 }
 
 const CategoryFilterStyle = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    button {
-        all: unset;
-		padding: 0.4rem 1rem;
-		border-radius: var(--border-radius);
-        font-size: 1.2rem;
-    }
-    .category {
-        background-color: var(--blue-2);
-		color: black;
-    }
-    .active {
-        background-color: var(--blue-1);
-		color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  button {
+    all: unset;
+    padding: 0.4rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+  }
+  .category {
+    background-color: var(--blue-2);
+  color: black;
+  }
+  .active {
+    background-color: var(--blue-1);
+  color: white;
+  }
+  @media only screen and (max-width: 800px) {
+    button{
+        font-size: 1rem;
+      }
 `;
