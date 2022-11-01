@@ -65,6 +65,7 @@ const AboutItemStyle = styled.div`
   h3 {
     font-size: 1.7rem;
     margin-bottom: 1.5rem;
+    font-weight: 200;
   }
   @media only screen and (max-width: 800px) {
     .about-title {
