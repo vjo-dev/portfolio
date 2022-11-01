@@ -32,10 +32,10 @@ const CategoryFilterStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
   button {
     all: unset;
     padding: 0.4rem 1rem;
+    margin: 0.4rem;
     border-radius: var(--border-radius);
     font-size: 1.2rem;
   }

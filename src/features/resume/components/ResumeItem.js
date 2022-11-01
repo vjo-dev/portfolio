@@ -32,7 +32,6 @@ const ResumeItemStyle = styled.div`
     .items{
         display: flex;
         flex-flow: wrap;
-        gap: 1rem;
         position: absolute;
         left: 15rem;
     }
@@ -43,6 +42,7 @@ const ResumeItemStyle = styled.div`
         font-weight: bold;
         border-radius: var(--border-radius);
         font-size: 1.2rem;
+        margin: 0 0.2rem;
         padding: 0.5rem 1rem;
     }
 

@@ -49,9 +49,9 @@ const AboutItemStyle = styled.div`
   .about-title {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     margin-bottom: 1rem;
     .icon-container {
+      margin-right: 0.5rem;
       width: 35px;
       svg {
         width: 100%;

@@ -96,7 +96,7 @@ const ProjectSectionStyle = styled.div`
     padding: 4rem 0;
 
     .project_section-swiper {
-        padding: 0.5rem;
+        padding: 2rem 0.5rem;
         .swiper {
             padding-top: 3rem;
             max-width: 100%;
@@ -109,14 +109,14 @@ const ProjectSectionStyle = styled.div`
             height: 50px;
             width: 50px;
             z-index: 10;
-            right: 100px;
+            right: 50%;
             left: auto;
             top: 0;
             transform: translateY(50%);
             border-radius: 8px;
         }
         .swiper-button-next {
-            right: 40px;
+            right: calc(50% - 60px);
         }
         .swiper-button-prev::after,
         .swiper-button-next::after {

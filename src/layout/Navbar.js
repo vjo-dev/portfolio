@@ -60,6 +60,11 @@ const NavbarStyle = styled.div`
 
     .mobile-menu-buttons {
         display: none;
+        height: 100%;
+        svg {
+        width: auto;
+        height: 100%;
+      }
     }
 
     .mobile-menu-items {
@@ -79,6 +84,7 @@ const NavbarStyle = styled.div`
             width: auto;
         }
         span {
+            width: fit-content;
             color: var(--text-color);
             font-size: 2rem;
             font-weight: 300;
@@ -122,10 +128,10 @@ const NavbarStyle = styled.div`
 
     .mobile-menu-buttons {
         display: flex;
-        width: 35px;
+        height: 100%;
         svg {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
             }
     }
 
