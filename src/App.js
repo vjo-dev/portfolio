@@ -33,14 +33,12 @@ const AppStyle = styled.div`
     --blue-2: hsl(205, 100%, 80%);
     --green-1: hsl(105, 58%, 44%);
     --green-2: hsl(105, 58%, 84%);
-    --bg-color: ${props => props.darkMode? "black" : "white"};
+    --dark: hsl(213, 73%, 12%);
+    --light: hsl(0, 0%, 100%);
+    --bg-color: ${props => props.darkMode? "var(--dark)" : "var(--light)"};
     --text-color: ${props => props.darkMode? "white" : "black"};
     --text-color-light: ${props => props.darkMode? "black" : "white"};
-    --blue: ${props => props.darkMode? "var(--blue-2)" : "var(--blue-1)"};
-    --light-blue: ${props => props.darkMode? "var(--blue-1)" : "var(--blue-2)"};
-    --green: ${props => props.darkMode? "green" : "green"};
-    --light-green: ${props => props.darkMode? "lightgreen" : "lightgreen"};
-    --border-radius: 8px;
+    --border-radius: 10px;
 
     background: var(--bg-color);
     color: var(--text-color);

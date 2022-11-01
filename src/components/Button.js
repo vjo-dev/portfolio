@@ -27,10 +27,10 @@ const ButtonStyle = styled.div`
         padding: 0.6rem 2rem;
         border-radius: var(--border-radius);
         display: inline-block;
-        border: 2px solid var(--blue);
-		color: var(--blue);
+        border: 2px solid var(--blue-2);
+		color: var(--blue-2);
 		:hover {
-			background-color: var(--blue);
+			background-color: var(--blue-2);
 			color: white;
 		}
     }
