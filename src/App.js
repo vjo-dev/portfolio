@@ -6,6 +6,7 @@ import Footer from './layout/Footer';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
+import NotFoundPage from './pages/NotFoundPage';
 import AlwaysOnTop from './layout/AlwaysOnTop';
 import styled from 'styled-components';
 
@@ -21,6 +22,7 @@ export default function App() {
                     <Route exact path="/" element={<HomePage />} />
                     <Route exact path="/projects" element={<ProjectsPage />} />
                     <Route exact path="/about" element={<AboutPage />} />
+                    <Route path="*" element={<NotFoundPage />} />
                 </Routes>
                 <Footer />
             </Router>
