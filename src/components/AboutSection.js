@@ -107,7 +107,7 @@ const AboutSectionStyle = styled.div`
   @media only screen and (max-width: 800px) {
     padding: 4rem 1rem;
     .about-container {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }
 `;
