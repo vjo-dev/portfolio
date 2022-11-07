@@ -18,7 +18,7 @@ export default function ResumeList() {
             <div className="resume-group">
                 <h2>Certifications</h2>
                 {certifications.map(certification => (
-                    <ResumeItem key={certification.id} name={certification.name} items={certification.items}/>
+                    <ResumeItem key={certification.id} name={certification.name} items={certification.items} appendix={certification.appendix}/>
                 ))}
             </div>
             <div className="resume-group">
@@ -30,7 +30,7 @@ export default function ResumeList() {
             <div className="resume-group">
                 <h2>Education</h2>
                 {educations.map(education => (
-                    <ResumeItem key={education.id} name={education.name} items={education.items}/>
+                    <ResumeItem key={education.id} name={education.name} items={education.items} appendix={education.appendix}/>
                 ))}
             </div>
         </ResumeListStyle>
