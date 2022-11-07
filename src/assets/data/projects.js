@@ -7,7 +7,7 @@ import tyb from '../images/tyb.png'
 import woodbox from '../images/woodbox.JPG'
 import pmo from '../images/pmo.jpg'
 import finance from '../images/finance.jpg'
-import lion from '../images/lion.jpg'
+import wheels from '../images/wheels.jpg'
 import pixel from '../images/pixel.png'
 import pulse from '../images/pulse.jpg'
 
@@ -26,7 +26,7 @@ const projects = [
         name: 'Customization app',
         desc:
         'Application to create a custom design UV printed on freestyle scooter wheels. Build with Django and React frameworks.',
-        img: lion,
+        img: wheels,
     },
     {
         id: uuidv4(),
