@@ -8,14 +8,14 @@ const skills = [
     },
     {
         id: uuidv4(),
-        name: 'version control',
-        items: ['Git', 'Github']
+        name: 'version control and editor',
+        items: ['Git', 'Github', 'Vim']
     },
     {
         id: uuidv4(),
         name: 'Framework',
         items: ['Django', 'React']
-    }
+    },
 ]
 
 export default skills;
