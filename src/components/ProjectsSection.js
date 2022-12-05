@@ -1,8 +1,8 @@
 import React from "react";
-import { useSelector } from 'react-redux';
 import SectionTitle from './SectionTitle';
 import Button from './Button';
 import { ProjectCard } from '../features/projects';
+import projects from '../assets/data/projects';
 
 import styled from 'styled-components';
 
@@ -12,7 +12,6 @@ import 'swiper/css';
 import "swiper/css/navigation";
 
 export default function ProjectsSection() {
-	const projects = useSelector(state => state.projects.projects)
 
 	return(
         <ProjectSectionStyle>
@@ -28,8 +27,10 @@ export default function ProjectsSection() {
                     modules={[Navigation]}
                     breakpoints={{640: {slidesPerView: 1}, 768: {slidesPerView: 2}, 1200: {slidesPerView: 3}}}
                 >
-                    {projects.map((project, index) => {
-                        if (index >= 5) {
+                    {projects
+                    .filter(project => project.category === "Web dev")
+                    .map((project, index) => {
+                        if (index >= 4) {
                             return null
                         } else {
                             return (

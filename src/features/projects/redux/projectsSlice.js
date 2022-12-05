@@ -12,9 +12,10 @@ const getCategoryChoices = projects => {
 }
 
 const initialState = {
-    projects,
-    category: "All",
-    categories: getCategoryChoices(projects)
+  projects,
+  // projects: projects.filter(project => project.category === "Web dev"),
+  category: "All",
+  categories: getCategoryChoices(projects)
 }
 
 export const projectsSlice = createSlice({

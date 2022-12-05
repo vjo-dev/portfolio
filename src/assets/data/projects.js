@@ -10,8 +10,17 @@ import finance from '../images/finance.jpg'
 import wheels from '../images/wheels.jpg'
 import pixel from '../images/pixel.png'
 import pulse from '../images/pulse.jpg'
+import portfolio from '../images/portfolio.png'
 
 const projects = [
+    {
+        id: uuidv4(),
+        category: "Web dev",
+        name: 'My portfolio',
+        desc:
+        'My portfolio static website. Full react project to showcase my work.',
+        img: portfolio,
+    },
     {
         id: uuidv4(),
         category: "Web dev",

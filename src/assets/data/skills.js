@@ -8,12 +8,17 @@ const skills = [
     },
     {
         id: uuidv4(),
-        name: 'version control and editor',
-        items: ['Git', 'Github', 'Vim']
+        name: 'Versionning',
+        items: ['Git', 'Github']
     },
     {
         id: uuidv4(),
-        name: 'Framework',
+        name: 'Editors',
+        items: ['Vim', 'VsCode', 'PyCharm']
+    },
+    {
+        id: uuidv4(),
+        name: 'Frameworks',
         items: ['Django', 'React']
     },
 ]
