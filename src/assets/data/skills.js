@@ -19,7 +19,17 @@ const skills = [
     {
         id: uuidv4(),
         name: 'Frameworks',
-        items: ['Django', 'React']
+        items: ['Django', 'React', 'Vue']
+    },
+    {
+        id: uuidv4(),
+        name: 'Databases',
+        items: ['MySQL', 'MongoDB', 'PostgreSQL']
+    },
+    {
+        id: uuidv4(),
+        name: 'Testing',
+        items: ['Pytest', 'Jest']
     },
 ]
 

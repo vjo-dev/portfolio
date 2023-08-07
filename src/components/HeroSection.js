@@ -10,7 +10,7 @@ export default function HeroSection() {
             </div>
             <div className="hero-section-pitch">
                 <h1>Welcome!</h1>
-                <h2>I'm Vincent, a<br/>web developper<br/>but not only...</h2>
+                <h2>My name is Vincent,<br/>I'm interested in<br/>web development<br/>but not only...</h2>
                 <h3>Take a look to discover my activities.</h3>
             </div>
 		</HeroSectionStyle>
