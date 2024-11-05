@@ -3,6 +3,8 @@ import bookshelf_amj from "../images/bookshelf_amj.JPG";
 import workbench from "../images/workbench.png";
 import onewink from "../images/onewink.png";
 import onewink_1 from "../images/onewink_1.png";
+import timemachine from "../images/time-machine.png";
+import lbb from "../images/lbb.png";
 import toolchest from "../images/toolchest.JPG";
 import tyb from "../images/tyb.png";
 import woodbox from "../images/woodbox.JPG";
@@ -17,9 +19,16 @@ const projects = [
   {
     id: uuidv4(),
     category: "Web dev",
-    name: "My portfolio",
-    desc: "My portfolio static website. Full react project to showcase my work.",
-    img: portfolio,
+    name: "Delorean Dashboard Clock",
+    desc: "Relive the future with a sleek, Vue.js-powered clock inspired by the iconic time machine from Back to the Future. ",
+    img: timemachine,
+  },
+  {
+    id: uuidv4(),
+    category: "Web dev",
+    name: "LBB website",
+    desc: "Simple landing page developped using Vue.js framework.",
+    img: lbb,
   },
   {
     id: uuidv4(),
@@ -27,6 +36,13 @@ const projects = [
     name: "Onewink website retrofit",
     desc: "Retrofit of a previous work to get rid of paid backend solution and reduce costs to the association. Build with Vue framework.",
     img: onewink_1,
+  },
+  {
+    id: uuidv4(),
+    category: "Web dev",
+    name: "My portfolio",
+    desc: "My portfolio static website. Full react project to showcase my work.",
+    img: portfolio,
   },
   {
     id: uuidv4(),
