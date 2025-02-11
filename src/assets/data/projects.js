@@ -14,14 +14,38 @@ import wheels from "../images/wheels.jpg";
 import pixel from "../images/pixel.png";
 import pulse from "../images/pulse.jpg";
 import portfolio from "../images/portfolio.png";
+import tractor from "../images/tractor.jpg";
+import athena from "../images/athena.jpg";
+import chair from "../images/chair.jpg";
 
 const projects = [
+  {
+    id: uuidv4(),
+    category: "Woodworking",
+    name: "Simple kid chair",
+    desc: "This wooden chair was a quick project build from scraps of other projects to provide better ergonomic support for my son during his gaming sessions.",
+    img: chair,
+  },
+  {
+    id: uuidv4(),
+    category: "Woodworking",
+    name: "Wooden tractor with trailer",
+    desc: "This wooden tractor and trailer was a labor of love, created as a Christmas surprise for my son built from recycled wine case and other scraps.",
+    img: tractor,
+  },
   {
     id: uuidv4(),
     category: "Web dev",
     name: "Delorean Dashboard Clock",
     desc: "Relive the future with a sleek, Vue.js-powered clock inspired by the iconic time machine from Back to the Future. ",
     img: timemachine,
+  },
+  {
+    id: uuidv4(),
+    category: "Woodworking",
+    name: "Door decoration gift",
+    desc: "A personalized door decoration I created as a thank you gift for a friend's kind gesture.",
+    img: athena,
   },
   {
     id: uuidv4(),
