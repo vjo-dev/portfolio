@@ -17,8 +17,16 @@ import portfolio from "../images/portfolio.png";
 import tractor from "../images/tractor.jpg";
 import athena from "../images/athena.jpg";
 import chair from "../images/chair.jpg";
+import mastermind from "../images/mastermind.png";
 
 const projects = [
+  {
+    id: uuidv4(),
+    category: "Web dev",
+    name: "Mastermind game",
+    desc: "Simple 2D masterming game developped with godot game engine.",
+    img: mastermind,
+  },
   {
     id: uuidv4(),
     category: "Woodworking",
