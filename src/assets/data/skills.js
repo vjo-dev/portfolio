@@ -4,7 +4,7 @@ const skills = [
   {
     id: uuidv4(),
     name: "languages",
-    items: ["Python", "Javascript", "Powershell", "bash", "html", "css"],
+    items: ["Python", "JavaScript", "Powershell", "Bash", "HTML", "CSS", "SQL"],
   },
   {
     id: uuidv4(),

@@ -18,8 +18,24 @@ import tractor from "../images/tractor.jpg";
 import athena from "../images/athena.jpg";
 import chair from "../images/chair.jpg";
 import mastermind from "../images/mastermind.png";
+import agents from "../images/agents.png";
+import pm from "../images/pm.jpg";
 
 const projects = [
+  {
+    id: uuidv4(),
+    category: "Web dev",
+    name: "Project Management Tool",
+    desc: "Creation of a full and sovereign project management tool from targets, goals, projects to daily tasks including systems, processes documentation and best practices work instructions.",
+    img: pm,
+  },
+  {
+    id: uuidv4(),
+    category: "Web dev",
+    name: "Crew AI Agents",
+    desc: "Team of agents to perform project management tasks deploy using crewai, with python.",
+    img: agents,
+  },
   {
     id: uuidv4(),
     category: "Web dev",
